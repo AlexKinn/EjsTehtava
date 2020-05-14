@@ -1,0 +1,79 @@
+body{
+    background-color:green;
+}
+
+main {
+    display:grid;
+    justify-items: center;
+}
+h1, h2, h3, h4, h5, h6, p, pre, label, input{
+    color: black;
+}
+input{
+    background-color: green;
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+table, td, th {
+    border: 1px solid black;
+    padding: 0.5em;
+    color: black;
+}
+tr:nth-child(odd) {
+    background-color: green;
+}
+
+th {
+    background-color: green;
+}
+
+.nappi {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    width: 13em;
+    height: 2em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    margin-bottom:0.3em;
+    margin-top:0.3em;
+    background-color: green;
+    color: black;
+    text-align: center;
+}
+
+label, .selite{
+    font-weight: bold;
+    padding-right: 0.3em;
+}
+
+#syote {
+    display:grid;
+    justify-items: left;
+}
+
+.eiloydy {
+    font-weight: bold;
+    color:red;
+    width:13em;
+}
+
+#viestialue, #kentat > div {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#viestialue {
+    width:13em;
+    font-weight: bold;
+    color:blue;
+}
+
+/*päivitystä varten*/
+input[readonly] {
+    background-color: gray;
+}

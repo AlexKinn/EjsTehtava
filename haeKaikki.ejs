@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kaikki pelit</title>
+    <link rel="stylesheet" href="/tyylit/tyylit.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h2>Kaikki pelit</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Numero</th>
+                    <th>Nimi</th>
+                    <th>Arvostelu</th>
+                    <th>Genre</th>
+                    <th>Vuosi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% pelit.forEach(peli => { %>
+                <tr>
+                    <td>
+                        <%= peli.numero %>
+                    </td>
+                    <td>
+                        <%= peli.nimi %>
+                    </td>
+                    <td>
+                        <%= peli.arvostelu %>
+                    </td>
+                    <td>
+                        <%= peli.genre %>
+                    </td>
+                    <td>
+                        <%= peli.vuosi %>
+                    </td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <a class="nappi" href="/">Valikkoon</a>
+    </main>
+</body>
+
+</html>

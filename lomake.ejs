@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="/tyylit/tyylit.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1><%= otsikko %></h1>
+        <form id="pelilomake" action="<%= toiminto %>" method="POST">
+            <p>
+                <label for="numero">Numero:</label>
+                <input type="text" id="numero" name="numero" size="5"
+                value="<%= numero.arvo %>" required  <%= numero.vainluku %>>
+            </p>
+            <p>
+                <label for="nimi">Nimi:</label>
+                <input type="text" id="nimi" name="nimi" size="20"
+                value="<%= nimi.arvo %>" required <%= nimi.vainluku %>>
+            </p>
+            <p>
+                <label for="arvostelu">arvostelu:</label>
+                <input type="text" id="arvostelu" name="arvostelu" size="10"
+                value="<%= arvostelu.arvo %>" <%= arvostelu.vainluku %>>
+            </p>
+            <p>
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" size="30"
+                value="<%= genre.arvo %>" <%= genre.vainluku %>>
+            </p>
+            <p>
+                <label for="vuosi">vuosi:</label>
+                <input type="text" id="vuosi" name="vuosi" size="30"
+                value="<%= vuosi.arvo %>" <%= vuosi.vainluku %>>
+            </p>
+            <div id="napit">
+                <button class="nappi" type="submit">Lähetä</button>
+                <a class="nappi" href="/">Valikkoon</a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
